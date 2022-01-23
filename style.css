@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
+*{
+    font-family: 'Outfit', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+li{
+    list-style: none;
+}
+a{
+    color:blue;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items:center;
+    margin:1rem;
+    /* border:solid 1px; */
+}
+
+.component-container{
+    flex-flow:row wrap;
+    align-items: center;
+}
+
+.component-heading{
+    margin:1rem;
+    background-color: paleturquoise;
+    padding:7px;
+}
+
+/*basic card styling*/
+.card-container{
+    display:flex;
+    flex-direction: column;
+    width:300px;
+    border:solid;
+    background-color:#E0E0E0;
+    border-radius: 3px;
+    margin:1rem;
+}
+
+.card-image{
+    width:100px;
+}
+
+.card-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin:1rem;
+}
+.card-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E8E8E8;
+    margin:1rem 0 0 0;
+    padding:5px;
+}
+
+.card-icon{
+    cursor: pointer;
+    max-width: 1.5rem;
+}
+
+/*card style 1 : horizontal image and text*/
+.card-style-1{
+    display:flex;
+    flex-direction: row;
+}
+
+.flex-grow{
+    flex-grow:1;
+}
+
+/*card style 2 : basic with only buttons*/
+.hide-menu{
+    display: none;
+}
+
+/*basic chip styling*/
+.chip-items{
+    /* width:400px; */
+    margin:1rem;
+    padding:1rem;
+    display: flex;
+    flex-wrap: wrap;
+    border:solid 1px;
+    align-items: space-around;
+}
+.chip-item{
+    padding:5px;
+    background-color: yellow;
+    border-radius:5px;
+    margin:5px;
+}
+
+/*chip style 1 : stacked chips*/
+.stacked-chips{
+    flex-direction: column;
+}
+
+/*chip style 2 : chip with cancel button*/
+.align-chip-items{
+    width:100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cancel-chip{
+    width:1rem;
+    cursor: pointer;
+}
+
+.scrolable-section{
+    background-color: #E8E8E8;
+    width: 450px;
+    height: 200px;
+    margin:1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.header{
+    background: purple;
+    height:40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.header-items{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+}
+
+.header-icon{
+    margin:5px;
+}
+
+/*fixed header component*/
+.fixed-header{
+    position:sticky;
+    top:0;
+}
+
+/*short always collapsed*/
+.header-width{
+    width:90px;
+    border-radius: 0 0 25px 0;
+}
+.hide-right{
+    display: none;
+}
+
+.badge{
+    padding:5px;
+    margin:5px;
+    height: 15px;
+    border-radius:50%;
+    width: 15px;
+    background-color:salmon;
+    text-align: center;
+    vertical-align: center;
+}
+
+.demo-screen{
+    background-color:#E8E8E8;
+    width:500px;
+    height:250px;
+    margin:1rem;
+}
+
+.snackbar{
+    background-color:black;
+    color:grey;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:100%;
+    width:70%;
+    margin:auto;
+    margin-bottom: 1rem;
+    padding:10px;
+    border-radius: 3px;
+}
+
+.snackbar-cancel{
+    width:25px;
+}
+
+.leading-snackbar{
+    right:100%;
+    margin-left:10px;
+}
+
+.stacked-snackbar{
+    flex-direction: column;
+}
+
+.stack-submenu{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/*dialog component*/
+.dialog{
+    width:250px;
+    height:80px;
+    background-color:#E8E8E8;
+    margin:1rem;
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:space-between;
+    
+}
+
+.dialog-actions{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dialog-content{
+    font-size: large;
+    font-weight: bolder;
+    text-align:center;
+}
+.action-pill{
+    margin:7px;
+    font-weight:smaller;
+}
+.stacked{
+    height:400px;
+}
+.stacked-dialog{
+    flex-direction: column;
+}
